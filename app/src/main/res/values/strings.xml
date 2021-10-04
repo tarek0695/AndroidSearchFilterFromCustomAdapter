@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SearchFilterCustomAdapter</string>
+
+    <string-array name="categories">
+        <item>Education</item>
+        <item>Daily Life</item>
+        <item>House and Home</item>
+        <item>Family</item>
+        <item>Shopping</item>
+        <item>Health</item>
+        <item>Food and Restaurant</item>
+        <item>Travel - Transport - Vacation - Direction</item>
+        <item>Environment - Weather - Climate</item>
+        <item>Work - Jobs - Office</item>
+        <item>Entertainment - Media</item>
+        <item>Special Events</item>
+        <item>Money - Bank</item>
+        <item>Communication - Time</item>
+        <item>Sports and Fitness</item>
+        <item>Fashion - Clothes</item>
+        <item>Friendship - Memory - Emotions</item>
+    </string-array>
+</resources>
