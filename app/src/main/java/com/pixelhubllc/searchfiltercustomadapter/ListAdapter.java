@@ -20,11 +20,17 @@ public class ListAdapter extends BaseAdapter implements Filterable{
     private String conversationCategory;
     private ItemFilter mFilter = new ItemFilter();
 
+    private static int selectedIndex;
+
     public ListAdapter(Context context, List<String> data, String conversationCategory) {
         this.filteredData = data ;
         this.originalData = data ;
         this.conversationCategory = conversationCategory;
         mInflater = LayoutInflater.from(context);
+    }
+
+    public static void setSelectedIndex(int ind) {
+        selectedIndex = ind;
     }
 
     public int getCount() {
@@ -66,6 +72,17 @@ public class ListAdapter extends BaseAdapter implements Filterable{
             // and the ImageView.
             holder = (ViewHolder) convertView.getTag();
         }
+
+
+
+        if (position == selectedIndex) {
+            convertView.setBackgroundColor(convertView.getResources().getColor(R.color.teal_200));
+        }
+        else {
+            convertView.setBackgroundColor(convertView.getResources().getColor(R.color.white));
+        }
+
+
 
         // If weren't re-ordering this you could rely on what you set last time
         holder.text1.setText(filteredData.get(position));

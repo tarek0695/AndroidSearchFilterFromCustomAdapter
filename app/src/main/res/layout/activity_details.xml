@@ -5,19 +5,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
 
     <TextView
+        android:id="@+id/title"
+        android:text="Details Activity"
         android:textAlignment="center"
-        android:id="@+id/go"
-        android:text="Go TO List"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:background="@color/purple_200"
-        android:textSize="20sp"/>
+        android:gravity="center_horizontal" />
 
+    <TextView
+        android:id="@+id/category"
+        android:text="Details Activity"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" />
 
 </LinearLayout>
